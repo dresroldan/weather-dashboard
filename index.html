@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Font Awesome link-->
+    <script src="https://kit.fontawesome.com/ca89a4b9f5.js" crossorigin="anonymous"></script>
+    <!-- Bootstrap Link-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- My style sheet -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Weather Dashboard</title>
+</head>
+
+<body>
+
+    <!-- header -->
+    <header class="bg-dark pt-2 pb-2">
+        <div class="container">
+            <h1 class="text-center text-white">weather dashboard</h1>
+        </div>
+    </header>
+
+    <!-- main container -->
+    <div class="container-fluid">
+
+        <!-- 1st row -->
+        <div class="row">
+            <!-- 1st col -->
+
+            <div class="col-lg-4 bg-light pt-3 pb-3">
+                <h5>search for a city</h5>
+
+                <!-- search input  -->
+                <div class="input-group ">
+                    <input type="text" id="cityEntry" class="form-control" placeholder="city name">
+                    <div class="input-group-append">
+                        <button id="searchButton" class="btn btn-secondary" type="button">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+                </div>
+                <!-- end of search input  -->
+
+
+                <!-- start card -->
+                <div class="card">
+                    <ul class="list-group list-group-flush list">
+                    </ul>
+                </div>
+            </div>
+
+            <!-- 2nd col -->
+            <div class="col-lg-8 pt-3 pb-4">
+
+                <!-- weather cards will append here -->
+                <div id="currentCity" class="mt-4">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2nd row -->
+
+    <div class="mt-4 col-md-12">
+        <h5 id="forecast5" class="mt-3 hide">5-Day Forecast:</h5>
+        <div id="forecast" class="row">
+        </div>
+
+    </div>
+
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
