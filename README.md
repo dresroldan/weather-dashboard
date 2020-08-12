@@ -23,4 +23,4 @@ When the user opens the weather dashboard, then the user is presented with the l
 
 
 
-![]()
+![](weatherdashboardscreen.png)
